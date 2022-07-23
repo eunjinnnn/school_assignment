@@ -1,1 +1,52 @@
+#Q1.영어 수학 과학 점수 평균내기
+eng = 90
+math = 85
+sci = 92
+mean = (eng+math+sci)/3
+print(mean)
+
+
+#Q2.BMI지수 계산하기
+weight=63
+height=166
+bmi=weight*10000/height**2
+print(bmi)
+
+
+#Q3.숫자 세개 입력받아 총 합과 평균 내기
+a,b,c=input('숫자 세개를 입력하세요:' ).split()
+a=int(a)
+b=int(b)
+c=int(c)
+
+print(a+b+c)
+print((a+b+c)/3)
+
+
+#Q4.
+a,b=input('세자리 자연수 두개를 입력하세요: ').split()
+a=int(a)
+b=int(b)
+
+print(a*(b%10))
+print(a*(b//100%10))
+print(a*(b//100))
+print(a*b)
+
+
+#Q5.
+A,B,C=input('세 수를 입력하세요:').split()
+A=int(A)
+B=int(B)
+C=int(C)
+
+print((A+B)%C)
+print(((A%C) + (B%C))%C)
+print((A*B)%C)
+print(((A%C)*(B%C))%C)
+
+
+#Q6.주민등록번호 합치기(split활용)
+a,b = input('주민등록번호를 입력하세요('-'포함):').split('-')
+print(a+b)
 
