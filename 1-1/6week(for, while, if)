@@ -1,0 +1,67 @@
+#if의 활용
+#(짝수 홀수 구분하기)
+a=input('숫자를 입력하세요 :')
+b='!'
+if a!=b:
+   a = int(a)
+   if a % 2 == 0:
+      print('even number')
+   elif a % 2 == 1:
+      print('odd number')
+elif a == b:
+      print('exit the program')
+      print('Bye~')
+      
+#(좌표를 포함하고 있는 사분면 반환하기)
+x=int(input('x좌표값을 입력하세요:'))
+y=int(input('y좌표값을 입력하세요:'))
+if x>0 and y>0 :
+    print('Quadrant 1')
+
+elif x<0 and y>0 :
+    print('Quadrant 2')
+
+elif x<0 and y<0 :
+    print('Quadrant 3')
+
+elif x>0 and y<0 :
+    print('Quadrant 4')
+    
+
+#for문의 활용
+#(점수 합계)
+myscores = [76,80,50,75]
+total=0
+for score in myscores:
+    total += score
+
+print(total)
+
+#(팩토리얼 계산)
+value = 1
+a = int(input('숫자를 입력하세요:'))
+for factorial in range(1,a+1):
+    value*=factorial
+
+print(value)
+
+#(삼각형만들기)
+n = int(input('숫자를 입력하세요 :'))
+for triangle in range(1,n+1 ):
+    print("*"*triangle)
+    
+
+#while문 활용
+#백준 - 더하기 사이클(https://www.acmicpc.net/problem/1110)
+number =int(input('숫자를 입력하세요:'))
+count=1
+
+while True:
+    tens = number//10
+    one = number%10
+    NUMBER= one+(tens+one)%10
+    count+=1
+    if number==NUMBER:
+       break
+
+print(count)
